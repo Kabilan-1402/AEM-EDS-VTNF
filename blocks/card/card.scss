@@ -73,9 +73,6 @@
 // // }
 
 // // -----card1-----
-
-
-
 // // -----card2-----
 
 // .card-container {
@@ -147,10 +144,7 @@
 //         }
 //     }
 // }
-
-
 // // -----card3-----
-
 // .card-container {
 //     .card-wrapper {
 //         .card {
@@ -220,8 +214,6 @@
 //         }
 //     }
 // }
-
-
 // // -----card4-----
 // .card-container {
 //     .card-wrapper {
@@ -294,9 +286,6 @@
 //         }
 //     }
 // }
-
-
-
 // .card-container {
 //     .card-wrapper {
 //         .card {
@@ -375,7 +364,7 @@
       position: relative;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0px 0px 10px #777777;
+      box-shadow: 0 0 10px #777;
       background: #fff;
 
       &::after {
@@ -395,7 +384,7 @@
         width: 100%;
       }
 
-      &__numbers {
+      .custom-card-numbers {
         position: absolute;
         font-size: 50px;
         top: -9%;
@@ -404,25 +393,25 @@
         transition: 0.4s ease;
       }
 
-      &__title {
+      .custom-title {
         font-size: 20px;
         color: #000;
       }
 
-      &__text {
+      .custom-text {
         font-size: 18px;
         color: grey;
         padding-bottom: 10px;
         min-height: 60px;
       }
 
-      &__image img {
+      .custom-image img {
         width: 50%;
         margin: 0 auto;
       }
 
       &:hover {
-        &__numbers {
+        .custom-card-numbers {
           opacity: 1;
           color: red;
         }
@@ -430,3 +419,4 @@
     }
   }
 }
+
