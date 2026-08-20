@@ -103,7 +103,6 @@
 //             description3.classList.add('custom-description-3');
 //         }
 //     }
-
 // }
 
 
