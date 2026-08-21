@@ -5,11 +5,11 @@ export default function decorate(block) {
     const cardnum = card.querySelector('h5');
     cardnum?.classList.add('custom-card-numbers');
     const cardimg = card.querySelector('p:has(img)');
-    cardimg?.classList.add('custom-image');
+    cardimg?.classList.add('custom-card-image');
     const cardtitle = card.querySelector('h2');
-    cardtitle?.classList.add('custom-title');
+    cardtitle?.classList.add('custom-card-title');
     const cardtext = card.querySelector('p:not(:has(img))');
-    cardtext?.classList.add('custom-text');
+    cardtext?.classList.add('custom-card-text');
   });
 }
 
