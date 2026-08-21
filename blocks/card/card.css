@@ -1,221 +1,46 @@
-.card-container .card-wrapper .card {
+.card {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-}
-.card-container .card-wrapper .card .custom-card {
+  justify-content: center;
   text-align: center;
-  position: relative;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px #777777;
-  background: #fff;
 }
-.card-container .card-wrapper .card .custom-card::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 5px;
-  width: 0;
-  background: red;
-  transition: width 0.4s ease;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+
+.card .health-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 0 11px 15px;
+  box-shadow: 2px 3px 14px #aba9a9;
+  border-radius: 5px;
+  background: #FFF;
 }
-.card-container .card-wrapper .card .custom-card:hover::after {
-  width: 100%;
+
+.card .health-card-image-img {
+  width: 70px;
 }
-.card-container .card-wrapper .card .custom-card .custom-card-numbers {
-  position: absolute;
-  font-size: 50px;
-  top: -9%;
-  opacity: 0.1;
-  right: 12px;
-  transition: 0.4s ease;
+
+.card .health-card-title {
+  margin: 0;
+  padding: 0 10px;
+  color: #d5d5d5;
+  opacity: 0.4;
 }
-.card-container .card-wrapper .card .custom-card .numbers {
+
+.card .health-card-pretitle {
   font-size: 20px;
-  color: #000;
 }
-.card-container .card-wrapper .card .custom-card .custom-card-heading {
-  font-size: 20px;
-  color: #000;
+
+.card .health-card-description {
+  color: #7c7c7c;
+  font-size: 14px;
+  font-weight: bold;
 }
-.card-container .card-wrapper .card .custom-card .custom-description {
-  font-size: 18px;
-  color: grey;
-  padding-bottom: 10px;
-  min-height: 60px;
+
+.card .health-card:hover::after {
+  transform: scaleX(1);
 }
-.card-container .card-wrapper .card .custom-card .custom-image img {
-  width: 50%;
-  margin: 0 auto;
-}
-.card-container .card-wrapper .card .custom-card:hover .custom-card-numbers {
-  opacity: 1;
+
+.card .health-card:hover .health-card-title {
   color: red;
-}
-
-.card-container .card-wrapper .card {
-  display: flex;
-  gap: 20px;
-}
-.card-container .card-wrapper .card .custom-card-1 {
-  text-align: center;
-  position: relative;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px #777777;
-  background: #fff;
-}
-.card-container .card-wrapper .card .custom-card-1::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 5px;
-  width: 0;
-  background: rgb(9, 255, 255);
-  transition: width 0.4s ease;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.card-container .card-wrapper .card .custom-card-1:hover::after {
-  width: 100%;
-}
-.card-container .card-wrapper .card .custom-card-1 .custom-card-numbers-1 {
-  position: absolute;
-  font-size: 50px;
-  top: -9%;
-  opacity: 0.1;
-  right: 12px;
-  transition: 0.4s ease;
-}
-.card-container .card-wrapper .card .custom-card-1 .custom-card-heading-2 {
-  font-size: 20px;
-  color: #000;
-}
-.card-container .card-wrapper .card .custom-card-1 .custom-description-1 {
-  font-size: 18px;
-  color: grey;
-  padding-bottom: 10px;
-  min-height: 60px;
-}
-.card-container .card-wrapper .card .custom-card-1 .custom-image-1 img {
-  width: 50%;
-  margin: 0 auto;
-}
-.card-container .card-wrapper .card .custom-card-1:hover .custom-card-numbers-1 {
   opacity: 1;
-  color: rgb(9, 255, 255);
 }
-
-.card-container .card-wrapper .card {
-  display: flex;
-  gap: 20px;
-}
-.card-container .card-wrapper .card .custom-card-2 {
-  text-align: center;
-  position: relative;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px #777777;
-  background: #fff;
-}
-.card-container .card-wrapper .card .custom-card-2::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 5px;
-  width: 0;
-  background: rgb(9, 244, 52);
-  transition: width 0.4s ease;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.card-container .card-wrapper .card .custom-card-2:hover::after {
-  width: 100%;
-}
-.card-container .card-wrapper .card .custom-card-2 .custom-card-numbers-2 {
-  position: absolute;
-  font-size: 50px;
-  top: -9%;
-  opacity: 0.1;
-  right: 12px;
-  transition: 0.4s ease;
-}
-.card-container .card-wrapper .card .custom-card-2 .custom-card-heading-2 {
-  font-size: 20px;
-  color: #000;
-}
-.card-container .card-wrapper .card .custom-card-2 .custom-description-2 {
-  font-size: 18px;
-  color: grey;
-  padding-bottom: 10px;
-  min-height: 60px;
-}
-.card-container .card-wrapper .card .custom-card-2 .custom-image-2 img {
-  width: 50%;
-  margin: 0 auto;
-}
-.card-container .card-wrapper .card .custom-card-2:hover .custom-card-numbers-2 {
-  opacity: 1;
-  color: rgb(9, 244, 52);
-}
-
-.card-container .card-wrapper .card {
-  display: flex;
-  gap: 20px;
-}
-.card-container .card-wrapper .card .custom-card-3 {
-  text-align: center;
-  position: relative;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px #777777;
-  background: #fff;
-}
-.card-container .card-wrapper .card .custom-card-3::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 5px;
-  width: 0;
-  background: rgb(242, 255, 0);
-  transition: width 0.4s ease;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.card-container .card-wrapper .card .custom-card-3:hover::after {
-  width: 100%;
-}
-.card-container .card-wrapper .card .custom-card-3 .custom-card-numbers-3 {
-  position: absolute;
-  font-size: 50px;
-  top: -9%;
-  opacity: 0.1;
-  right: 12px;
-  transition: 0.4s ease;
-}
-.card-container .card-wrapper .card .custom-card-3 .custom-card-heading-3 {
-  font-size: 20px;
-  color: #000;
-}
-.card-container .card-wrapper .card .custom-card-3 .custom-description-3 {
-  font-size: 18px;
-  color: grey;
-  padding-bottom: 10px;
-  min-height: 60px;
-}
-.card-container .card-wrapper .card .custom-card-3 .custom-image-3 img {
-  width: 50%;
-  margin: 0 auto;
-}
-.card-container .card-wrapper .card .custom-card-3:hover .custom-card-numbers-3 {
-  opacity: 1;
-  color: rgb(242, 255, 0);
-}/*# sourceMappingURL=card.css.map */

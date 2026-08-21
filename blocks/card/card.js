@@ -1,15 +1,16 @@
 export default function decorate(block) {
   const cards = [...block.children];
   cards.forEach((card) => {
-    card?.classList.add('custom-card');
-    const cardnum = card.querySelector('h5');
-    cardnum?.classList.add('custom-card-numbers');
-    const cardimg = card.querySelector('p:has(img)');
-    cardimg?.classList.add('custom-card-image');
-    const cardtitle = card.querySelector('h2');
-    cardtitle?.classList.add('custom-card-heading');
-    const cardtext = card.querySelector('p:not(:has(img))');
-    cardtext?.classList.add('custom-card-description');
+    card.classList.add('health-card');
+    const title = card.querySelector('h2');
+    title?.classList.add('health-card-title');
+    const pretitle = card.querySelector('h3');
+    pretitle?.classList.add('health-card-pretitle');
+    const image = card.querySelector('p:has(img)');
+    image?.classList.add('health-card-image');
+    const imageImg = image?.querySelector('img');
+    imageImg?.classList.add('health-card-image-img');
+    const description = card.querySelector('p:not(:has(img))');
+    description?.classList.add('health-card-description');
   });
 }
-
