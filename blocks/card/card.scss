@@ -286,85 +286,17 @@
 //         }
 //     }
 // }
-// .card-container {
-//     .card-wrapper {
-//         .card {
-//             display: flex;
-//             gap: 20px;
-
-//             &-card {
-//                 text-align: center;
-//                 position: relative;
-//                 padding: 20px;
-//                 border-radius: 10px;
-//                 box-shadow: 0px 0px 10px #777777;
-//                 background: #fff;
-
-//                 &::after {
-//                     content: "";
-//                     position: absolute;
-//                     bottom: 0;
-//                     left: 0;
-//                     height: 5px;
-//                     width: 0;
-//                     background: red;
-//                     transition: width 0.4s ease;
-//                     border-bottom-right-radius: 10px;
-//                     border-bottom-left-radius: 10px;
-//                 }
-
-//                 &:hover::after {
-//                     width: 100%;
-//                 }
-
-//                 &-card-numbers {
-//                     position: absolute;
-//                     font-size: 50px;
-//                     top: -9%;
-//                     opacity: 0.1;
-//                     right: 12px;
-//                     transition: 0.4s ease;
-//                 }
-
-//                 &-card-heading {
-//                     font-size: 20px;
-//                     color: #000;
-//                 }
-
-//                 &-description {
-//                     font-size: 18px;
-//                     color: grey;
-//                     padding-bottom: 10px;
-//                     min-height: 60px;
-//                 }
-
-//                 &-image {
-//                     img {
-//                         width: 50%;
-//                         margin: 0 auto;
-//                     }
-//                 }
-
-//                 &:hover {
-//                     .custom-card-numbers {
-//                         opacity: 1;
-//                         color: red;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
 .card-container {
-  .card-wrapper {
+  &-wrapper {
+    display: flex;
+    gap: 20px;
+
     .custom-card {
-      display: flex;
-      gap: 20px;
       text-align: center;
       position: relative;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 0 10px #777;
+      box-shadow: 0px 0px 10px #777777;
       background: #fff;
 
       &::after {
@@ -384,7 +316,7 @@
         width: 100%;
       }
 
-      .custom-card-numbers {
+      &-numbers {
         position: absolute;
         font-size: 50px;
         top: -9%;
@@ -393,21 +325,23 @@
         transition: 0.4s ease;
       }
 
-      .custom-title {
+      &-heading {
         font-size: 20px;
         color: #000;
       }
 
-      .custom-text {
+      &-description {
         font-size: 18px;
         color: grey;
         padding-bottom: 10px;
         min-height: 60px;
       }
 
-      .custom-image img {
-        width: 50%;
-        margin: 0 auto;
+      &-image {
+        img {
+          width: 50%;
+          margin: 0 auto;
+        }
       }
 
       &:hover {
@@ -419,4 +353,69 @@
     }
   }
 }
+
+// .card-container {
+//   .card-wrapper {
+//     .custom-card {
+//       display: flex;
+//       gap: 20px;
+//       text-align: center;
+//       position: relative;
+//       padding: 20px;
+//       border-radius: 10px;
+//       box-shadow: 0 0 10px #777;
+//       background: #fff;
+
+//       &::after {
+//         content: "";
+//         position: absolute;
+//         bottom: 0;
+//         left: 0;
+//         height: 5px;
+//         width: 0;
+//         background: red;
+//         transition: width 0.4s ease;
+//         border-bottom-right-radius: 10px;
+//         border-bottom-left-radius: 10px;
+//       }
+
+//       &:hover::after {
+//         width: 100%;
+//       }
+
+//       .custom-card-numbers {
+//         position: absolute;
+//         font-size: 50px;
+//         top: -9%;
+//         opacity: 0.1;
+//         right: 12px;
+//         transition: 0.4s ease;
+//       }
+
+//       .custom-title {
+//         font-size: 20px;
+//         color: #000;
+//       }
+
+//       .custom-text {
+//         font-size: 18px;
+//         color: grey;
+//         padding-bottom: 10px;
+//         min-height: 60px;
+//       }
+
+//       .custom-image img {
+//         width: 50%;
+//         margin: 0 auto;
+//       }
+
+//       &:hover {
+//         .custom-card-numbers {
+//           opacity: 1;
+//           color: red;
+//         }
+//       }
+//     }
+//   }
+// }
 
