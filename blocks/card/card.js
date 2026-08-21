@@ -12,4 +12,3 @@ export default function decorate(block) {
     cardtext?.classList.add('custom-card-description');
   });
 }
-
