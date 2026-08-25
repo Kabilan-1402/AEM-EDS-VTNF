@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.card .health-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 0 11px 15px;
+  box-shadow: 2px 3px 14px #aba9a9;
+  border-radius: 5px;
+  background: #FFF;
+}
+
+.card .health-card-image-img {
+  width: 70px;
+}
+
+.card .health-card-title {
+  margin: 0;
+  padding: 0 10px;
+  color: #d5d5d5;
+  opacity: 0.4;
+}
+
+.card .health-card-pretitle {
+  font-size: 20px;
+}
+
+.card .health-card-description {
+  color: #7c7c7c;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card .health-card:hover::after {
+  transform: scaleX(1);
+}
+
+.card .health-card:hover .health-card-title {
+  color: red;
+  opacity: 1;
+}
