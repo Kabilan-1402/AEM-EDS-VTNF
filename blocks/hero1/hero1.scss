@@ -1,0 +1,88 @@
+.hero1 {
+  width: 100%;
+  margin: 0 auto;
+
+  &-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 70px 8% 0;
+    background-image: url('images/banner-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  &-text {
+    width: 55%;
+    padding-top: 20px;
+  }
+
+  &-pretitle {
+    margin: 140px 0 30px;
+    color: #d9007f;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &-title {
+    margin: 0 0 18px;
+    max-width: 500px;
+    color: #1d1d1d;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+
+  &-description {
+    margin: 25px 0 35px;
+    max-width: 500px;
+    color: #102f48;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  &-buttons {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin: 0;
+  }
+
+  &-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    min-height: 50px;
+    padding: 14px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &-button-primary {
+    background-color: #d9007f;
+    color: #fff !important;
+  }
+
+  &-button-secondary {
+    background-color: #321b2b;
+    color: #fff !important;
+  }
+
+  &-image-img {
+    display: block;
+    width: 124%;
+    max-width: 690px;
+    height: auto;
+    object-position: -3px -4px;
+  }
+}
